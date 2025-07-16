@@ -15,6 +15,8 @@ package sub6;
 public class PolyTest {
 	
 	public static void main(String[] args) {
+	
+		/*
 		//다형성 실습
 		//다형성 - 자식 객체의 타입선언을 부모타입으로 선언
 		Animal tiger = new Tiger();  //업캐스팅
@@ -52,6 +54,18 @@ public class PolyTest {
 		arr[1].move();
 		arr[2].move();
 		
+		*/
+		
+		Pet dog = new Dog();
+		Pet cat = new Cat();
+		
+		printSound(dog);
+		printSound(cat);
+		
+		}
+	
+	public static void printSound(Pet pet) {
+		pet.makeSound();
 	}
 
 }
