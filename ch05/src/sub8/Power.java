@@ -9,12 +9,12 @@ public class Power implements Socket {
 	}
 	@Override
 	public void switchOn() {
-		bulb.bulb = bulb;
+		bulb.lightOn();
 	}
 
 	@Override
 	public void switchOff() {
-		bulb.bulb = bulb;
+		bulb.lightOff();
 	}
 
 }

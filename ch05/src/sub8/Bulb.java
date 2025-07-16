@@ -2,7 +2,7 @@ package sub8;
 
 public class Bulb {
 
-	public Bulb bulb;
+	
 	public void lightOn() {
 		System.out.println("불 켜짐...");
 	}

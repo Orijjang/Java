@@ -14,4 +14,6 @@ public class SmartTv extends Tv implements Internet {
 		
 		System.out.println("SmartTv On...");
 	}
+	
+	
 }
