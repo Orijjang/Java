@@ -24,7 +24,7 @@ public class Test04 {
 		int total = 0;
 		
 		for(String score : scores) {
-			total += Integer.parseInt(score);
+			total += Integer.parseInt(score.trim());
 		}
 		
 		System.out.println("strScores 총점 : " + total);

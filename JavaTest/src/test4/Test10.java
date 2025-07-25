@@ -19,16 +19,16 @@ public class Test10 {
 			File file = new File(path);
 			FileWriter fw = new FileWriter(file);
 			
-			for(int x=2 ; x<=9 ; x++) {
-				fw.write(x);
+			for(int x = 2; x <= 9; x++) {
+				fw.write(x + "단\n");
 				
-				for(int y=1 ; y <=8; y++) {
-					int z = x*y;
-					fw.
+				for(int y = 1; y <= 9; y++) {  // ← 수정: 9까지 포함
+					int z = x * y;
+					fw.write(x + " x " + y + " = " + z + "\n");
 				}
 			}
 			fw.close();
-		}catch(IOException e) {
+		} catch(IOException e) {
 			e.printStackTrace();
 		}
 		System.out.println("구구단 파일 출력 완료...");

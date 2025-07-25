@@ -15,25 +15,24 @@ public class Test07 {
 	public static void main(String[] args) {
 		
 		for(int count = 1; count <= 5 ; count++) {
-			System.out.println();
+			System.out.println(makeLotto());
 		}
 	}
 	
-	makeLotto(){
+	public static Set<Integer> makeLotto(){
 		
-		HashSet<> lottoSet = new HashSet<>();
+		Set<Integer> lottoSet = new HashSet<>();
 		
 		for(;;) {
-			int num = (int) Math.ceil(0);
+			int num = (int) Math.ceil(Math.random() * 46);
 			lottoSet.add(num);
-			
-			if() {
+			if(lottoSet.size() == 6) {
 				break;
 			}
 		}
 		
 		Set<Integer> treeSet = new TreeSet<>(lottoSet);
 		
-		return;
+		return treeSet;
 	}
 }

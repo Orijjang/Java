@@ -50,6 +50,7 @@ class Grape {
 		return "Grape [country=" + country + ", price=" + price + "]";
 	}
 }
+
 public class Test05 {
 
 	public static void main(String[] args) {
@@ -63,11 +64,17 @@ public class Test05 {
 		showInfo(grape);
 	}
 	
-	public static void showInfo(fruit) {
+	public static void showInfo(Object fruit) {
 		
-		if(fruit Apple) {
-			Apple apple = 
-					
+		if(fruit instanceof Apple) {
+			Apple apple = (Apple) fruit;
+			System.out.println(apple);
+		}else if (fruit instanceof Banana) {
+			Banana banana = (Banana) fruit;
+			System.out.println(banana);
+		}else if(fruit instanceof Grape) {
+			Grape grape = (Grape) fruit;
+			System.out.println(grape);
 		}
 	}
 }

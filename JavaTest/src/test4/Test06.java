@@ -24,21 +24,21 @@ public class Test06 {
 	
 		for(int i=0 ; i<size ; i++) {
 			
-			int score = scoreList. ??
+			int score = scoreList.get(i);
 			total += score;
 			System.out.print(score);
 			
 			if(i == size -1) {
 				System.out.print(" = ");
 			}else {
-				System.out.println(" + ");
+				System.out.print(" + ");
 			}
 		}
 		System.out.println(total);
 	}
 	
-	public static createList() {
-		? scoreList = new ArrayList<>();
+	public static List<Integer> createList() {
+		List<Integer> scoreList = new ArrayList<>();
 		Random rand = new Random();
 		
 		for(int i=1 ; i<=10 ; i++) {
